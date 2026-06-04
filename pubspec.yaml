@@ -10,26 +10,34 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  csv: ^6.0.0
-  share_plus: ^10.0.0
 
   cupertino_icons: ^1.0.8
-  
-  # Responsive UI tool
+
+  # Responsive UI
   flutter_screenutil: ^5.9.3
 
   # Firebase & Authentication
   firebase_core: ^3.15.2
   firebase_auth: ^5.4.0
-  cloud_firestore: ^5.6.0   # <--- ADD THIS LINE HERE
-  google_sign_in: ^6.2.1
+  cloud_firestore: ^5.6.0
   intl: ^0.20.2
+
+  # Provider (state management)
+  provider: ^6.1.2
+
+  # Export
+  csv: ^6.0.0
+  excel: ^3.0.0
+
+  # File sharing (mobile) + temp directory
+  share_plus: ^10.0.0
+  path_provider: ^2.1.4
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^5.0.0
-  flutter_launcher_icons: ^0.14.4 
+  flutter_launcher_icons: ^0.14.4
 
 flutter:
   uses-material-design: true
@@ -37,6 +45,7 @@ flutter:
   assets:
     - assets/images/app_icon.png
     - assets/images/profile.png
+
 # This must stay at the very edge (no spaces)
 flutter_launcher_icons:
   android: "launcher_icon"
